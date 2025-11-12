@@ -3,7 +3,223 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>HTML attributes</title>
     </head>
-    <body></body>
+    <body>
+        <h1>HTML Attributes</h1>
+        <h2>HTML Global attributes</h2>
+        <h3>The <code> class </code> Attribute</h3>
+        <p>
+            The <code> class </code> attribute is used to specify one or more class names for an
+            HTML element. Classes can be used by CSS and JavaScript to select and access specific
+            elements.
+        </p>
+        <p class="fo bar">Example</p>
+
+        <h3>The <code> contenteditable </code> Attribute</h3>
+        <p>
+            The <code> contenteditable </code> attribute is used to specify whether the content of
+            an element is editable or not. When set to "true", the content of the element can be
+            edited by the user.
+        </p>
+        <div contenteditable="true" style="border: 1px solid black; padding: 10px; width: 300px">
+            This content is editable. Click here to edit.
+        </div>
+
+        <h3>The <code> data-* </code> Attribute</h3>
+        <p>
+            The <code> data-* </code> attribute is used to store custom data private to the page or
+            application. The data can be accessed using JavaScript.
+        </p>
+        <div data-user-id="12345" data-role="admin">This div has custom data attributes.</div>
+
+        <h3>The <code> dir </code> Attribute</h3>
+        <p>
+            The <code> dir </code> attribute is used to specify the text direction for the content
+            in an element. It can take the values "ltr" (left to right), "rtl" (right to left), or
+            "auto".
+        </p>
+        <p dir="ltr" style="border: 1px solid black; padding: 10px; width: 300px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod qui tempora suscipit
+            aliquid officiis, accusantium non totam corporis cumque necessitatibus, alias minus?
+            Nostrum optio nisi incidunt repellendus at nesciunt ex.
+        </p>
+
+        <h3>The <code> id </code> Attribute</h3>
+        <p>
+            The <code> id </code> attribute is used to specify a unique identifier for an HTML
+            element. The value of the <code> id </code> attribute must be unique within the HTML
+            document.
+        </p>
+        <p id="unique-paragraph">This paragraph has a unique ID.</p>
+
+        <h3>The <code> lang </code> Attribute</h3>
+        <p>
+            The <code> lang </code> attribute is used to specify the language of the content in an
+            element. This can help search engines and browsers to better understand the content.
+        </p>
+        <p lang="en" style="text-transform: uppercase">This paragraph is in English.</p>
+        <p lang="es" style="text-transform: uppercase">Este párrafo está en español.</p>
+
+        <h3>The <code> title </code> Attribute</h3>
+        <p>
+            The <code> title </code> attribute is used to provide additional information about an
+            element. This information is often displayed as a tooltip when the user hovers over the
+            element.
+        </p>
+        <p title="This is a tooltip example.">Hover over this paragraph to see the tooltip.</p>
+
+        <h3>The <code> translate </code> Attribute</h3>
+        <p>
+            The <code> translate </code> attribute is used to specify whether the content of an
+            element should be translated or not. It can take the values "yes" or "no".
+        </p>
+        <p translate="no" style="border: 1px solid black; padding: 10px; width: 300px">
+            This content should not be translated.
+        </p>
+        <h2>HTML Attributes</h2>
+        <h3>The <code> img </code> Attribute</h3>
+        <p>
+            The <code> src </code> attribute is used to specify the URL of the image to be
+            displayed.
+        </p>
+        <img
+            src="https://www.w3schools.com/html/pic_trulli.jpg"
+            alt="Trulli"
+            style="width: 300px; height: auto"
+        />
+        <p>
+            The <code> alt </code> attribute is used to provide alternative text for the image if it
+            cannot be displayed.
+        </p>
+        <img
+            src="https://www.w3schools.com/html/non_existent_image.jpg"
+            alt="This is an alternative text for the image."
+            style="width: 300px; height: auto"
+        />
+
+        <h3>The <code> a </code> Attribute</h3>
+        <p>
+            The <code> href </code> attribute is used to specify the URL of the page the link goes
+            to.
+        </p>
+        <a href="https://www.example.com" target="_blank" rel="noopener noreferrer"
+            >Visit Example.com</a
+        >
+        <h3>The <code> video </code> Attribute</h3>
+        <p>
+            The <code> controls </code> attribute is used to specify that video controls should be
+            displayed (such as a play/pause button, volume control, etc.).
+        </p>
+        <video width="320" height="240" controls autoplay loop muted>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+        <h3>The <code> hidden </code> Attribute</h3>
+        <p>
+            The <code> hidden </code> attribute is used to hide an element from the page. The
+            element will not be displayed, but it will still be present in the HTML code.
+        </p>
+        <p hidden>This paragraph is hidden and will not be displayed on the page.</p>
+
+        <h3>The <code> tabindex </code> Attribute</h3>
+        <p>
+            The <code> tabindex </code> attribute is used to specify the tab order of an element
+            when the user navigates through the page using the Tab key.
+        </p>
+        <input type="text" tabindex="2" placeholder="Second input" />
+        <input type="text" tabindex="1" placeholder="First input" />
+
+        <h3>The <code> draggable </code> Attribute</h3>
+        <p>
+            The <code> draggable </code> attribute is used to specify whether an element is
+            draggable or not. When set to "true", the element can be dragged using the mouse.
+        </p>
+        <div
+            draggable="true"
+            style="border: 1px solid black; padding: 10px; width: 200px; text-align: center"
+        >
+            Drag me!
+        </div>
+        <h3>The <code> spellcheck </code> Attribute</h3>
+        <p>
+            The <code> spellcheck </code> attribute is used to specify whether the content of an
+            element should be checked for spelling errors or not. It can take the values "true" or
+            "false".
+        </p>
+        <textarea spellcheck="true" rows="4" cols="50">
+            This is a smaple text with a speling error.
+        </textarea>
+
+        <h3>The <code> accesskey </code> Attribute</h3>
+        <p>
+            The <code> accesskey </code> attribute is used to specify a shortcut key to activate or
+            focus an element.
+        </p>
+        <button accesskey="s" onclick="alert('Shortcut key activated!')">
+            Press "Alt + S" (or "Ctrl + S" on Mac) to activate this button.
+        </button>
+
+        <h3>The <code> href </code> Attribute</h3>
+        <p>
+            The <code> href </code> attribute is used to specify the URL of the page the link goes
+            to.
+        </p>
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google.com</a>
+
+        <h3>The <code> target </code> Attribute</h3>
+        <p>
+            The <code> target </code> attribute is used to specify where to open the linked
+            document. Common values are "_blank" (open in a new tab/window) and "_self" (open in the
+            same frame).
+        </p>
+        <a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer"
+            >Wikipedia.org</a
+        >
+        <h3>The <code> rel </code> Attribute</h3>
+        <p>
+            The <code> rel </code> attribute is used to specify the relationship between the current
+            document and the linked document. Common values include "noopener", "noreferrer", and
+            "nofollow".
+        </p>
+        <a href="https://www.example.com" target="_blank" rel="noopener noreferrer nofollow"
+            >Example.com with rel attributes</a
+        >
+
+        <h3>The <code> download </code> Attribute</h3>
+        <p>
+            The <code> download </code> attribute is used to specify that the target link should be
+            downloaded when clicked, rather than navigating to it.
+        </p>
+        <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" download
+            >Download Dummy PDF</a
+        >
+
+        <h3>The <code> loading </code> Attribute</h3>
+        <p>
+            The <code> loading </code> attribute is used to specify whether a resource should be
+            loaded lazily or eagerly. Common values are "lazy" (load when needed) and "eager" (load
+            immediately).
+        </p>
+        <img
+            src="https://www.w3schools.com/html/pic_trulli.jpg"
+            alt="Trulli"
+            loading="lazy"
+            style="width: 300px; height: auto"
+        />
+
+        <h3>The <code> decoding </code> Attribute</h3>
+        <p>
+            The <code> decoding </code> attribute is used to specify how the browser should decode
+            the image. Common values are "async" (decode asynchronously) and "sync" (decode
+            synchronously).
+        </p>
+        <img
+            src="https://www.w3schools.com/html/pic_trulli.jpg"
+            alt="Trulli"
+            decoding="async"
+            style="width: 300px; height: auto"
+        />
+    </body>
 </html>
