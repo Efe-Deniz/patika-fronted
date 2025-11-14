@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Listeler</title>
+    </head>
+    <body>
+        <h1>Listeler</h1>
+        <br />
+        <table
+            style="
+                width: 100%;
+                border-collapse: collapse;
+                text-align: center;
+                font-family: Arial, sans-serif;
+                margin-top: 20px;
+            "
+        >
+            <caption style="color: cadetblue">
+                Liste Türleri
+            </caption>
+            <thead>
+                <tr
+                    style="
+                        background-color: cadetblue;
+                        color: aliceblue;
+                        text-transform: capitalize;
+                    "
+                >
+                    <th
+                        rowspan="1"
+                        style="border: 2px solid #546e7a; padding: 10px; text-align: center"
+                    >
+                        Sırasız Listeler
+                    </th>
+                    <th
+                        rowspan="1"
+                        style="border: 2px solid #546e7a; padding: 10px; text-align: center"
+                    >
+                        Sıralı Listeler
+                    </th>
+                    <th
+                        rowspan="1"
+                        style="border: 2px solid #546e7a; padding: 10px; text-align: center"
+                    >
+                        Açıklama Listeler
+                    </th>
+                </tr>
+                <tr style="background-color: #90a4ae; color: #333; font-size: 0.9em">
+                    <th style="border: 2px solid #546e7a; padding: 10px; text-align: center">
+                        Açıklama
+                    </th>
+                    <th style="border: 2px solid #546e7a; padding: 10px; text-align: center">
+                        Açıklama
+                    </th>
+                    <th style="border: 2px solid #546e7a; padding: 10px; text-align: center">
+                        Açıklama
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td
+                        style="
+                            background-color: #d2e3eb;
+                            border: 1px solid #85b3ca;
+                            padding: 10px;
+                            text-align: center;
+                        "
+                    >
+                        <p>
+                            Sırasız bir liste "ul" etikeri ile başlar. Her liste öğesi "li" etiketi
+                            ile başlar. Liste öğeleri varsayılan olarak "." işaretlenir
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            background-color: #d2e3eb;
+                            border: 1px solid #85b3ca;
+                            padding: 10px;
+                            text-align: center;
+                        "
+                    >
+                        <p>
+                            Sıralı bir liste "ol" etikeri ile başlar. Her liste öğesi "li" etiketi
+                            ile başlar. Liste öğeleri varsayılan olarak sayılarla işaretlenir
+                        </p>
+                    </td>
+                    <td
+                        style="
+                            background-color: #d2e3eb;
+                            border: 1px solid #85b3ca;
+                            padding: 10px;
+                            text-align: center;
+                        "
+                    >
+                        <p>
+                            Her bir terimin açıklamaısnı içeren bir terimler listesidir. "dl"
+                            etiketi açıklama listesini tanımar. "dt" etiketi terimi (adı) tanımlar
+                            ve "dd" etiketi her bir terimi açıklar
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td
+                        colspan="1"
+                        style="
+                            background-color: #d2e3eb;
+                            border: 1px solid #85b3ca;
+                            padding: 10px;
+                            text-align: center;
+                        "
+                    >
+                        <h2>Sırasız Liste Örnekleri</h2>
+                        <h3>Varsayılan</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                            <li>React</li>
+                        </ul>
+                        <h3>Farklı Madde İşaretleri</h3>
+                        <ul style="list-style-type: armenian">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                            <li>React</li>
+                        </ul>
+                        <h3>İç İçe geçmiş sırasız listeler</h3>
+                        <ul>
+                            <li>
+                                Meyveler
+                                <ul>
+                                    <li>Elma</li>
+                                    <li>Armut</li>
+                                    <li>Muz</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Sebzeler
+                                <ul>
+                                    <li>Havuç</li>
+                                    <li>Patates</li>
+                                    <li>Brokoli</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+
+                    <td
+                        colspan="1"
+                        style="
+                            background-color: #d2e3eb;
+                            border: 1px solid #85b3ca;
+                            padding: 10px;
+                            text-align: center;
+                        "
+                    >
+                        <h2>Sıralı Liste Örnekleri</h2>
+                        <h3>Varsayılan</h3>
+                        <ol>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                            <li>React</li>
+                        </ol>
+                        <h3>Belirli Numarayla Başlatmak</h3>
+                        <ol start="5">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ol>
+                        <h3>Ters Sıralı</h3>
+                        <ol reversed>
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                        </ol>
+                        <h3>İç İçe Sıralı</h3>
+                        <ol>
+                            <li>
+                                Frontend Teknolojileri
+                                <ol type="a">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ol>
+                            </li>
+                            <li>
+                                Backend Teknolojileri
+                                <ol type="a">
+                                    <li>Node.js</li>
+                                    <li>Express</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </td>
+                    <td
+                        colspan="1"
+                        style="
+                            background-color: #d2e3eb;
+                            border: 1px solid #85b3ca;
+                            padding: 10px;
+                            text-align: center;
+                        "
+                    >
+                        <div style="padding-bottom: 400px">
+                            <h2>Açıklama Listeleri</h2>
+                            <dl>
+                                <dt>HTML</dt>
+                                <dd>Web sayfalarının iskelet yapısını tanımlar.</dd>
+
+                                <dt>CSS</dt>
+                                <dd>Web sayfalarının görünümünü ve düzenini kontrol eder.</dd>
+
+                                <dt>JavaScript</dt>
+                                <dd>Web sayfalarına etkileşim ve dinamik davranış kazandırır.</dd>
+                            </dl>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
