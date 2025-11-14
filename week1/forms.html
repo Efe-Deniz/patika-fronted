@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formlar</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f9f6ff;
+                color: #333;
+                padding: 20px;
+                line-height: 1.6;
+            }
+            form {
+                background: #fff;
+                border: 2px solid #7b1fa2;
+                border-radius: 10px;
+                padding: 20px;
+                width: 60%;
+                margin: 0 auto;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            fieldset {
+                border: 2px solid #d1a9e0;
+                border-radius: 8px;
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+            legend {
+                font-weight: bold;
+                color: #6a1b9a;
+                padding: 0 10px;
+            }
+            label {
+                font-weight: bold;
+                display: inline-block;
+                margin-bottom: 5px;
+                color: #4a148c;
+            }
+            input,
+            select,
+            textarea,
+            button {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 12px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                font-size: 15px;
+            }
+            input[type='radio'],
+            input[type='checkbox'] {
+                width: auto;
+            }
+            button {
+                background-color: #7b1fa2;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            button:hover {
+                background-color: #5e1380;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center; color: #5e1380">HTML FORMS</h1>
+        <form action="#" method="post">
+            <!-- Kişisel Bilgiler-->
+            <fieldset>
+                <legend>Kişisel Bilgiler</legend>
+                <label for="name"> Adınız Soyadınız: </label>
+                <input
+                    type="text"
+                    id="name"
+                    name="fullname"
+                    placeholder="Adınızı ve soyadınızı girin"
+                    required
+                />
+
+                <label for="email">E-posta adresi: </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="ornek@example.com"
+                    required
+                />
+
+                <label for="password">Şifre: </label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Şifrenizi giriniz"
+                    required
+                />
+
+                <label for="age">Yaş:</label>
+                <input type="number" id="age" name="age" min="1" max="120" />
+            </fieldset>
+
+            <!-- Cinsiyet ile ilgili alanlar-->
+            <fieldset>
+                <legend>Cinsiyet ve İlgili Alanlar</legend>
+
+                <p><strong>Cinsiyet:</strong></p>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Erkek</label><br />
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Kadın</label><br />
+                <input type="radio" id="order" name="gender" value="order" />
+                <label for="order">Diğer</label>
+
+                <p><strong>İlgi Alanları:</strong></p>
+                <input type="checkbox" id="music" name="interest" value="music" />
+                <label for="music">Müzik</label><br />
+                <input type="checkbox" id="sports" name="interest" value="sports" />
+                <label for="sports">Spor</label><br />
+                <input type="checkbox" id="movies" name="interest" value="movies" />
+                <label for="movies">Filmler</label>
+            </fieldset>
+            <!-- Şehir ve Dosya yükleme-->
+            <fieldset>
+                <legend>Ek Bilgiler</legend>
+
+                <p><strong>Şehir:</strong></p>
+                <label for="city">Şehir:</label>
+                <select name="city" id="city">
+                    <option value="">Seçiniz</option>
+                    <option value="adana">Adana</option>
+                    <option value="ankara">Ankara</option>
+                    <option value="izmir">İzmir</option>
+                    <option value="istanbul">İstanbul</option>
+                </select>
+
+                <label for="resume">Dosya Yükle:</label>
+                <input type="file" id="resume" name="resume" />
+
+                <label for="bio">Kendinizi Tanıtın:</label>
+                <textarea
+                    name="bio"
+                    id="bio"
+                    rows="4"
+                    placeholder="Kısaca kendinizden bahsedin"
+                ></textarea>
+            </fieldset>
+            <!-- Tarih ve Aralık Girişi-->
+            <fieldset>
+                <legend>Tarih ve Aralık Girişi</legend>
+
+                <label for="birthday">Doğum Tarihi:</label>
+                <input type="date" id="birthday" name="birthday" />
+
+                <label for="satisfaction">Memnuniyet (0-10):</label>
+                <input type="range" name="satisfaction" id="satisfaction" min="0" max="10" />
+            </fieldset>
+            <!--Butonlar-->
+            <button type="submit">Gönder</button>
+            <button type="reset">Sıfırla</button>
+        </form>
+    </body>
+</html>
