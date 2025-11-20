@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS CALISMASI</title>
+        <style>
+            .p1 {
+                color: blue;
+                font-size: 20px;
+                background-color: yellow;
+                border: 2px solid red;
+            }
+            .class2 {
+                font-weight: bold;
+                font-style: italic;
+            }
+
+            .p2 .p3 {
+                font-size: 18px;
+                color: purple;
+                border: 2px dashed green;
+            }
+            #unique {
+                color: orange;
+                font-size: 22px;
+                background-color: lightgray;
+                border: 3px dotted black;
+            }
+            h3 {
+                color: red;
+            }
+            div h4 {
+                color: purple;
+            }
+            div p {
+                border-left: 4px solid blue;
+                padding-left: 8px;
+            }
+            p > mark {
+                background-color: lightgreen;
+                font-weight: bold;
+            }
+            a[href] {
+                color: brown;
+                text-decoration: none;
+                font-weight: bold;
+                border: 1px solid brown;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS ILE CALISMA</h1>
+        <h3>.class secicileri ile html elementlerine stil verilir</h3>
+        <p class="p1">Paragrafın bu kısmı class secicisi ile stil verilmiştir.</p>
+
+        <h3>.p1 .class2 secicileri aynı anda kullanmak</h3>
+
+        <div>
+            <p class="p1 class2">
+                Bu iki paragrafta da p1 ve class2 classları aynı anda kullanılmıştır.
+            </p>
+
+            <p class="class2 p1">
+                Bu iki paragrafta da p1 ve class2 classları aynı anda kullanılmıştır.
+            </p>
+        </div>
+
+        <p class="p2">
+            Bir class içindeki başka bir classı çağırarak
+            <span class="p3">oluşturulmuş bir paragraf örneğidir</span>. p2 classının içerisinde p3
+            kalsı çağrılmıştır. Görüldüğü gibi p2 classı içindeki p3 classı yeşil renkte
+            görülmektedir.
+        </p>
+
+        <h3>id ile belirleme</h3>
+        <p id="unique">
+            id bensersiz olmak zorunda. css id belirteci için # ile ulaşırız. bu paragraf id ile
+            şekillendirildi
+        </p>
+
+        <h3>element seçerek oluşturma</h3>
+        <p>tüm h3 başlıklarının rengini kırmızı yapalım</p>
+        <h3>element içerisinde element seçimi</h3>
+        <div>
+            <h4>Bu başlık bir div içerisinde ve mor renkte olmalı</h4>
+            <p>Bu paragraf bir div içerisinde ve soldan border sahip olmalı olmalı</p>
+        </div>
+
+        <h3>> kullanımı</h3>
+        <p>
+            eğer bir elementin hemen altında bir elemente still vermek istiyorsak > kullanmalıyız.
+            <mark
+                >örneğin bu prafgrafta olduğu gibi p etiketinin altında bir mark etiketine bu stili
+                verdik.</mark
+            >
+        </p>
+
+        <h3>[attribütes]</h3>
+        <p>
+            bu seçici bizim niteliklerimizin stilini değiştirmemize yarar. örneğin bir a tagındeki
+            href attribütünün stilini değiştirebiliriz.
+            <a href=" https://efe-deniz.github.io/">efe-deniz</a>
+        </p>
+        <p>
+            tüm attribütleri seçmek istemiyorusak [attribütes=value] diyerek de istediğimiz
+            attribütes alabiliriz
+        </p>
+    </body>
+</html>

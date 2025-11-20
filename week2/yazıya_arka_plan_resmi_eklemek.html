@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS</title>
+        <!--
+        metin içine arka plan resmi eklemek için background-image kullanılır.
+        background-clip ile arka planın sadece metin içinde görünmesi sağlanır.
+        color: transparent ile metin rengi şeffaf yapılır.
+        -webkit-background-clip: text; ile webkit tabanlı tarayıcılarda arka planın metin içinde görünmesi sağlanır.
+        background-clip: text; ile diğer tarayıcılarda arka planın metin içinde görünmesi sağlanır.
+        örnek kod aşağıdadır.
+        <style>
+            .text-image {
+                font-size: 180px;
+                font-weight: 900;
+                text-transform: uppercase;
+                background-image: url('https://picsum.photos/1200/600');
+                background-size: cover;
+                background-position: center;
+
+                /* sihir burada */
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+            body {
+                background: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+        </style>
+        -->
+        <!--
+        burada ise syadam gösterimi için aynı kod tekrar ediliyor
+        <style>
+            .text-image {
+                font-size: 180px;
+                font-weight: 900;
+                text-transform: uppercase;
+                background-image: url('https://picsum.photos/1200/600');
+                background-size: cover;
+                background-position: center;
+
+                /* sihir burada */
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+            body {
+                background: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+        </style>
+        -->
+    </head>
+    <body>
+        <h1>Yazıya Arka Plan Resmi Eklemek</h1>
+        <div class="text-image">TEXT</div>
+    </body>
+</html>

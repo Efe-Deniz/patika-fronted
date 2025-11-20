@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Margin vs Pading</title>
+        <style>
+            h2 {
+                font-size: 100px;
+                background-image: url('https://picsum.photos/1200/600');
+                background-size: cover;
+                background-position: center;
+                text-align: center;
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-color: lightgray;
+            }
+            .d1 {
+                margin: 50px;
+                border: 2px solid purple;
+            }
+            .d2 {
+                border: 2px solid orange;
+            }
+            .d3 {
+                padding: 50px;
+                border: 5px solid green;
+            }
+            .d4 {
+                border: 5px solid blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Margin vs Pading</h1>
+        <h2>Margin</h2>
+        <p>Margin: bir elementle diğer elementler arasındaki mesafe</p>
+        <div class="d1">Merhaba ben bir div'im ve benim etrafımda margin var.</div>
+        <div class="d2">
+            Merhaba ben de 2. bir divin ve ilk div margin ile oluşturulduğu için aramızda 20px
+            boşlık var. bende herhangi bir şekilde margin yok
+        </div>
+
+        <h2>Padding</h2>
+        <p>Padding: kutunun içinde element ile kutu arasındaki boşluklar</p>
+
+        <div class="d3">Merhaba ben bir div'im ve benim içimde padding var</div>
+
+        <div class="d4">merhaba ben bir divim ve benim içimde padding yok</div>
+    </body>
+</html>
