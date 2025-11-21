@@ -1,0 +1,100 @@
+.contaner {
+    display: block;
+    background-color: tomato;
+    margin: 5px;
+    color: white;
+}
+h3 {
+    color: red;
+}
+
+span {
+    display: inline;
+    background-color: skyblue;
+    padding: 5px;
+    font-size: 20px;
+}
+.flex-contaner {
+    display: flex;
+    background-color: gray;
+}
+.flex-contaner div {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    margin: 10px;
+    color: white;
+}
+.none-flex {
+    background-color: cadetblue;
+}
+.none-flex div {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    margin: 10px;
+    color: white;
+}
+.flex-direction {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+}
+.flex-direction div {
+    width: 100 px;
+    height: 100px;
+    background-color: tomato;
+    margin: 10px;
+    color: white;
+}
+.justify-content1 {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+.justify-content1 div {
+    width: 100 px;
+    height: 100px;
+    background-color: tomato;
+    margin: 10px;
+    color: white;
+}
+.justify-content2 {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+}
+.justify-content2 div {
+    width: 100 px;
+    height: 100px;
+    background-color: tomato;
+    margin: 10px;
+    color: white;
+}
+.align-items {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    background-color: gray;
+}
+.align-items div {
+    width: 100 px;
+    height: 100px;
+    background-color: tomato;
+    margin: 10px;
+    color: white;
+}
+.full-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: gray;
+}
+.full-center div {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    margin: 10px;
+    color: white;
+}

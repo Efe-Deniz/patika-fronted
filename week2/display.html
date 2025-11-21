@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Display</title>
+        <link rel="stylesheet" href="display.css" />
+    </head>
+    <body>
+        <h1>Display Page</h1>
+        <h2>Display-> Block vs Inlien</h2>
+        <h3><u>display:block</u></h3>
+        <div class="contaner">Ben birinci kutuyum tüm satır benim</div>
+        <div class="contaner">Ben ikinci kutuyum ve mecburen alta geçtim</div>
+
+        <h3><u>display:inlien</u></h3>
+        <span class="etiket-1">Ben sıradayım.</span>
+        <span class="etiket-2">Ben de hemen yanındayım!</span>
+        <span class="etiket-3">Yer varsa ben de geldim.</span>
+
+        <h3><u>display:flex</u></h3>
+        <p>flexbox özelliğini içteki kutulara değil, onları saran dış kutuya yazarız.</p>
+        <div class="flex-contaner">
+            <div class="flex-item1">1</div>
+            <div class="flex-item2">2</div>
+            <div class="flex-item3">3</div>
+        </div>
+        <p>
+            görüldüğü üzere flex özelliğini en dıştaki gri zemin üzerinde olan kutuya verdik ve
+            içerideki kutular bu özelliğe uyarak yan yana geldiler Tarayıcı burada Flex'i görür ve
+            tamam burası bir flex alanı der ve içindeki elemanlara bakmaz. flex olmasaydı bu
+            elemanlar alt alta dizilecekti. çünkü divler block elemanlardır. aşağıda flex olmadan
+            nasıl görülürdü ona bakalım
+        </p>
+
+        <div class="none-flex">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+        </div>
+
+        <p>peki flex kullandıktan sonra kutuları tekrardan alt alta sıralamak isteseydik?</p>
+        <p>işte o zaman da <span>flex-direction:column</span> kullanmamız gerekecekti.</p>
+
+        <div class="flex-direction">
+            <div class="direction1">1</div>
+            <div class="direction2">2</div>
+            <div class="direction3">3</div>
+        </div>
+
+        <p>
+            Peki tekrardan <span>flex-direction:row</span> durumuna tekrar dönersek. diyelimki bizim
+            bir kapsayıcı kutumuz var ve bu kutunun içerisinde küçük kutucuklar var . bu küçük
+            kutucukların hepsi normalde sol tarafa doğru yapışık olur. biz bu kutuları kapsayıcı
+            kutuların ortasına koymak, sağa yaslamak veya aralarını açmak istiyoruz.
+        </p>
+        <p>işte o zaman bunun için <span>justify-content</span> kullanmamız gerekmektedir</p>
+
+        <h3>justify-content:center</h3>
+        <div class="justify-content1">
+            <div class="content1">1</div>
+            <div class="content2">2</div>
+            <div class="content3">3</div>
+        </div>
+        <h3>justify-content:space-between</h3>
+        <div class="justify-content2">
+            <div class="content4">1</div>
+            <div class="content5">2</div>
+            <div class="content6">3</div>
+        </div>
+        <h3>align-items:center</h3>
+
+        <p>
+            peki diyelim ki kapsayıcı kutumuzun boyu çok yüksek ve içindeki kutular küçücük kalıyor.
+            normale bu kutular tavana yapışık duru. biz bu kutularıda dikey olarak ortaya getirmek
+            istiiyoruz.
+        </p>
+        <p>işte o zaman da kullanmamız gereken <span>align-items:center</span> özelliğidir.</p>
+
+        <div class="align-items">
+            <div class="align1">1</div>
+            <div class="align2">2</div>
+            <div class="align3">3</div>
+        </div>
+        <h3>Tam ortalama</h3>
+        <p>
+            <span>justify-content</span> ve <span>align-items</span> komutlarını birleştirdiğimiz
+            zaman ise sayfanın tam göbeğine ortalamış oluruz
+        </p>
+
+        <div class="full-center">
+            <div class="full1">1</div>
+            <div class="full2">2</div>
+            <div class="full3">3</div>
+        </div>
+    </body>
+</html>
