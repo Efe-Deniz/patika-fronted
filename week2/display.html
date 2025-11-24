@@ -93,5 +93,71 @@
             <div class="full2">2</div>
             <div class="full3">3</div>
         </div>
+        <h3>display:none</h3>
+        <p>
+            display:none özelliği ise bir elemanı tamamen sayfadan kaldırır. o eleman ne görünür ne
+            de sayfa üzerinde yer kaplar. Aşağıda 3 tane div oluşturduk ve kutu-2 classına sahip
+            divi display:none ile gizledik.
+        </p>
+        <div class="display-none">
+            <div class="kutu-1">1</div>
+            <div class="kutu-2">2</div>
+            <div class="kutu-3">3</div>
+        </div>
+        <p>
+            burada <span>visibility:hidden</span>ile karıştırmamak gerekir.
+            <span>visibility hidden</span> da kutu gizlenir ama sayfa üzerinde yer kaplar.
+            <span>display:none</span> da kutu-2 kaldırıldı ve kutu-3 onun yerine geçmiştir. ancak
+            <span>visibility-hidden</span> ile kutu sayfa içerisinde gizlenmiş ancak yerini koruduğu
+            için 3. kutu onun yerine geçmemiştir
+        </p>
+
+        <div class="visibility-hidden">
+            <div class="kutu1">1</div>
+            <div class="kutu2">2</div>
+            <div class="kutu3">3</div>
+        </div>
+
+        <h3>pratik</h3>
+        <nav class="menu-cubugu">
+            <div class="logo">Süper Site</div>
+            <div class="linkler">
+                <a href="#">Anasayfa</a>
+                <a href="#">Hakkımda</a>
+                <a href="#">İletişim</a>
+            </div>
+        </nav>
+
+        <h3>Position</h3>
+        <h4><u>relative</u></h4>
+        <div class="position">
+            <div class="box1">1</div>
+            <div class="box2">2</div>
+            <div class="box3">3</div>
+        </div>
+
+        <h4><u>absolute</u></h4>
+        <div class="parent">
+            <div class="child">Child</div>
+        </div>
+
+        <h3>pratic</h3>
+        <div class="urun-karti">
+            <img
+                src="img/kazak.png"
+                alt="indirim uygulanacak ürün"
+                style="width: 200px; background-color: antiquewhite"
+            />
+            <div class="indirim">%50 INDIRIM</div>
+        </div>
+        <h3>overflow</h3>
+
+        <div class="kutu">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore reiciendis sed
+                tempore quia nobis, neque, officia cupiditate mollitia alias facilis aperiam numquam
+                laborum nesciunt dolore! Voluptate amet vel unde suscipit.
+            </p>
+        </div>
     </body>
 </html>
